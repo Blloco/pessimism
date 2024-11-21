@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0QV0P6JCJM"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-0QV0P6JCJM');
+</script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Marcal Coin</title>
+    
+    <!-- Metadata for search engines -->
+    <meta name="description" content="Marcal: A community-driven cryptocurrency that transcends borders and fosters a global digital asset community." />
+    <meta name="keywords" content="Marcal Coin, Marcal, Marçal, Pablo Marçal, cripto, criptomoeda, cryptocurrency, crypto, blockchain, community-driven, Solana, Brasil, Brazil, digital asset" />
+    <meta name="author" content="KarstSprings" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph Tags for social media -->
+    <meta property="og:title" content="Marcal Coin" />
+    <meta property="og:description" content="Join the Marcal community and explore a cryptocurrency that connects people globally." />
+    <meta property="og:image" content="https://ipfs.filebase.io/ipfs/Qmav6fjbv5BKamqJjKWBGftzVivB6bGUL2KXkD9zvf6qtR" /> 
+    <meta property="og:url" content="https://karstsprings.github.io/MARCAL/" /> 
+
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        /* Inline CSS for demonstration purposes */
+        header {
+            text-align: center;
+            padding: 50px 0; /* Add padding for space inside the header */
+            background-image: url(BannerWS.png); /* Replace with your image file */
+            background-size: cover; /* Make sure the image covers the entire header */
+            background-position: center; /* Center the image */
+            color: white; /* Ensure text is readable */
+            position: relative; /* Allows absolute positioning of the language buttons */
+        }
+
+        .logo {
+            display: block;
+            margin: 0 auto;
+            width: 150px; /* Adjust the width of the logo as needed */
+        }
+
+        /* Style for the bottom left logo */
+        .bottom-left-logo {
+            position: absolute;
+            left: 20px; /* Adjust this value to position it horizontally */
+            bottom: 10px; /* Adjust this value to position it vertically */
+            width: 50px; /* Adjust the width of the small logo as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        /* Style for the new bottom right logo */
+        .bottom-right-logo {
+            position: absolute;
+            right: 20px; /* Align to the right */
+            bottom: 10px; /* Align with the bottom */
+            width: 50px; /* Adjust the width of the small logo as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+        
+         /* Box for "New Crypto!" in the upper left corner */
+        .new-crypto-box {
+            position: absolute;
+            top: 20px;  /* Position at the top */
+            left: 20px; /* Align to the left */
+            background-color: #FF0000; /* Red background for visibility */
+            color: white;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 8px;
+            border-radius: 5px; /* Slightly rounded corners */
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .language-selector {
+            position: absolute;
+            top: 20px; /* Adjust this value to position vertically */
+            right: 20px; /* Aligns the buttons to the right */
+        }
+
+        .language-selector button {
+            background-color: #fff;
+            color: #333;
+            border: 1px solid #ccc;
+            padding: 5px 10px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+
+    <script>
+        // Disable right-click context menu on the entire page
+        document.addEventListener("contextmenu", function (e) {
+            e.preventDefault();
+        });
+
+        // Function to switch language
+        function switchLanguage(lang) {
+            var enElements = document.querySelectorAll(".en");
+            var ptElements = document.querySelectorAll(".pt");
+
+            if (lang === "en") {
+                enElements.forEach(function (el) {
+                    el.classList.remove("hidden");
+                });
+                ptElements.forEach(function (el) {
+                    el.classList.add("hidden");
+                });
+            } else if (lang === "pt") {
+                ptElements.forEach(function (el) {
+                    el.classList.remove("hidden");
+                });
+                enElements.forEach(function (el) {
+                    el.classList.add("hidden");
+                });
+            }
+        }
+
+        // Check the user's language settings
+        document.addEventListener("DOMContentLoaded", function() {
+            const userLang = navigator.language || navigator.userLanguage; // Detect user's language
+            if (userLang.startsWith("pt")) { // Check if the language starts with "pt"
+                switchLanguage('pt'); // Switch to Portuguese
+            } else {
+                switchLanguage('en'); // Default to English
+            }
+        });
+    </script>
+</head>
+<body onload="switchLanguage('en')">
+    <!-- Default to English on load -->
+    <header>
+
+        <!-- New Crypto Box -->
+        <div class="new-crypto-box">
+            <h1 class="en">New cryptocurrency!</h1>
+            <h1 class="pt hidden">Nova criptomoeda!</h1>
+        </div>
+        
+        <img src="marcal.png" alt="Project Logo" class="logo" />
+        <h1 class="en">Marcal: A Democratic, Community-Driven Cryptocurrency</h1>
+        <h1 class="pt hidden">Marcal: Uma Criptomoeda Democrática, Movida pela Comunidade</h1>
+        
+        <!-- Existing small logo on the bottom left -->
+        <img src="small-logo.png" alt="Small Logo" class="bottom-left-logo" />
+
+        <!-- New small image on the bottom right -->
+        <img src="bluecap.png" alt="Blue Cap" class="bottom-right-logo" />
+
+        <nav>
+            <ul>
+                <li><a href="#about" class="en">About</a><a href="#about" class="pt hidden">Sobre</a></li>
+                <li>
+                    <a href="#keyfeatures" class="en">Key Features</a>
+                    <a href="#keyfeatures" class="pt hidden">Características Principais</a>
+                </li>
+                <li>
+                    <a href="#gettingstarted" class="en">Getting Started</a>
+                    <a href="#gettingstarted" class="pt hidden">Introdução</a>
+                </li>        
+                <li>
+                    <a href="#socialnetworks" class="en">Social Networks</a>
+                    <a href="#socialnetworks" class="pt hidden">Redes Sociais</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="language-selector">
+            <button onclick="switchLanguage('en')">
+                <img src="en.png" alt="English" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
+                English
+            </button>
+            <button onclick="switchLanguage('pt')">
+                <img src="pt.png" alt="Português" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
+                Português
+            </button>
+        </div>
+    </header>
+    <main>
+        <section id="about">
+            <h2 class="en">About the Project</h2>
+            <h2 class="pt hidden">Sobre o Projeto</h2>
+            <p class="en">
+                Marcal (ticker: MARCAL) is more than just a meme coin; it embodies a community-driven vision for a cryptocurrency that transcends borders and cultural barriers. With a blend of optimism, purpose, and courage, Marcal aims to empower and foster a global community, encouraging participation and collaboration while serving as a valuable digital asset.
+            </p>
+            <p class="pt hidden">Marcal (MARCAL) é mais do que apenas um meme; ele incorpora uma visão impulsionada pela comunidade que transcende fronteiras e barreiras culturais. Com uma mistura de otimismo, propósito e coragem, Marcal busca capacitar e fomentar uma comunidade global, incentivando a participação e a colaboração, e ainda pode servir como um valioso ativo digital.</p>
+        </section>
+        <section id="keyfeatures">
+            <h2 class="en">Key Features</h2>
+            <h2 class="pt hidden">Características Principais</h2>
+            <ul class="en">
+                <li>
+                    <strong>Political Meme Inspiration:</strong> Drawing from powerful political memes and rooted in
+                    Brazilian culture, Marcal celebrates the unique intricacies of current Brazilian politics. It channels
+                    creativity and engages users to participate in meaningful dialogue and expression.
+                </li>
+                <li>
+                    <strong>Universal Appeal:</strong> Marcal is designed to resonate with a diverse audience by promoting inclusivity and accessibility, while also positioning itself as a viable cryptocurrency beyond its meme origins, offering practical platforms for transactions, community engagement, and value exchange.
+                </li>
+                <li>
+                    <strong>Cutting-Edge Technology:</strong> Marcal leverages the high-speed
+                    and low-cost capabilities of the Solana blockchain, ensuring fast and efficient transactions.
+                    This advanced technology enhances user experience and scalability, positioning Marcal at the
+                    forefront of the cryptocurrency landscape.
+                </li>
+            </ul>
+            <ul class="pt hidden">
+                <li>
+                    <strong>Inspiração de Meme Político:</strong> Inspirado por poderosos memes políticos e enraizado na cultura brasileira, Marcal celebra as singularidades da política brasileira atual. Ele canaliza criatividade e envolve os usuários a participarem de diálogos e expressões significativas.
+                </li>
+                <li>
+                    <strong>Apelo Universal:</strong> Marcal foi projetado para conectar-se com um público diversificado, promovendo inclusão e acessibilidade, ao mesmo tempo que se posiciona como uma criptomoeda viável além de suas origens como meme, oferecendo plataformas práticas para transações, engajamento comunitário e troca de valor.
+                </li>
+                <li>
+                    <strong>Tecnologia de Ponta, Custo de Transação Reduzido:</strong> Marcal aproveita as capacidades de alta velocidade e baixo custo da blockchain Solana, garantindo transações rápidas e eficientes a um custo acessível. Essa tecnologia avançada melhora a experiência do usuário e a escalabilidade, posicionando Marcal na vanguarda do cenário das criptomoedas.
+                </li>
+            </ul>
+        </section>
+
+        <section id="gettingstarted">
+            <h2 class="en">Getting Started</h2>
+            <h2 class="pt hidden">Introdução</h2>
+            <p class="en">
+                How you can join the Marcal community:
+            </p>
+            <ol class="en">
+                <li><strong>Wallet Setup:</strong> Create a digital wallet that supports Solana SPL Tokens (i.e. <a href="https://phantom.app/" target="_blank">Phantom App</a>).</li>
+                <li>
+                    <strong>Purchase Marcal:</strong> Visit 
+                    <a href="https://raydium.io/swap/?inputMint=sol&outputMint=mntmBhYzT1rwFMzmnu9ugcZQYJKT3n5isdQWsqhVChe" target="_blank">Raydium.io</a>
+                    or other decentralized exchanges (DEX) that support Solana tokens. Connect your wallet and use the mint address <code>mntmBhYzT1rwFMzmnu9ugcZQYJKT3n5isdQWsqhVChe</code> to locate liquidity pools trading Marcal.
+                </li>
+                <li><strong>Provide Liquidity:</strong> Add liquidity to the MARCAL/SOL pair through <a href="https://raydium.io/swap/?inputMint=sol&outputMint=mntmBhYzT1rwFMzmnu9ugcZQYJKT3n5isdQWsqhVChe" target="_blank">Raydium.io</a> or other DEXs. Use the mint address <code>mntmBhYzT1rwFMzmnu9ugcZQYJKT3n5isdQWsqhVChe</code> to locate or to create your own liquidity pools.</li>
+                <li><strong>Join the Community:</strong> Engage with us on social media and participate in discussions to help shape the future of Marcal.
+                </li>
+            </ol>
+
+            <p class="pt hidden">
+                Como você pode fazer parte desta comunidade:
+            </p>
+            <ol class="pt hidden">
+                <li><strong>Configuração da Carteira:</strong> Crie uma carteira digital que suporte Tokens SPL da Solana (i.e. <a href="https://phantom.app/" target="_blank">Phantom App</a>).</li>
+                <li>
+                    <strong>Aquisição de Moedas Marcal:</strong> Visite 
+                    <a href="https://raydium.io/swap/?inputMint=sol&outputMint=mntmBhYzT1rwFMzmnu9ugcZQYJKT3n5isdQWsqhVChe" target="_blank">Raydium.io</a>
+                    ou outras exchanges descentralizadas (DEX) que suportam tokens Solana para adquirir Marcais. Conecte sua carteira e use o endereço de mint <code>mntmBhYzT1rwFMzmnu9ugcZQYJKT3n5isdQWsqhVChe</code> para localizar pools de liquidez para troca de Marcal.
+                </li>
+                <li><strong>Forneça Liquidez:</strong> Adicione liquidez ao par MARCAL/SOL através da <a href="https://raydium.io/swap/?inputMint=sol&outputMint=mntmBhYzT1rwFMzmnu9ugcZQYJKT3n5isdQWsqhVChe" target="_blank">Raydium.io</a> ou outras DEXs. Use o endereço de mint <code>mntmBhYzT1rwFMzmnu9ugcZQYJKT3n5isdQWsqhVChe</code> para localizar ou criar seus próprios pools de liquidez.</li>
+                <li><strong>Participe da Comunidade:</strong> Participe conosco nas redes sociais e participe das discussões para ajudar a moldar o futuro do Marcal.
+                </li>
+            </ol>
+        </section>
+
+        <section id="socialnetworks">
+            <h2 class="en">Social Networks</h2>
+            <h2 class="pt hidden">Redes Sociais</h2>
+            <a href="https://x.com/MarcalCoin" target="_blank">
+                <img src="logo-white.png" alt="Logo" style="width: 40px; height: 40px" /> @MarcalCoin
+            </a>
+        </section>
+    </main>
+</body>
+</html>
